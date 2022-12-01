@@ -2,5 +2,10 @@ head{
 
 }
 body{
-    
+    background: rgb(81, 211, 120);
+    color: red;
+    font-size: small;
+    font-weight: lighter;
+    text-align: right;
+    margin-top: 0px;
 }
