@@ -1,0 +1,43 @@
+/*https://raw.githubusercontent.com/scrimba/learn-html-and-css/main/4.%20Build%20a%20Space%20Exploration%20Site/2.%20Add%20a%20background%20image%20from%20unsplash/images/universe.jpg*/
+body{
+    
+    color: #a9def9;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-image: url(https://raw.githubusercontent.com/scrimba/learn-html-and-css/main/4.%20Build%20a%20Space%20Exploration%20Site/9.%20Replace%20the%20jpg%20with%20a%20webp/images/galaxy.webp);
+}
+
+.main{
+    
+    padding: 5px 10px;
+    font-size: 200%;
+    
+}
+
+
+.btn{
+    padding: 6px 12px;
+    background: white;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    color: #14213d;
+    font-size: 70%;
+}
+.underline{
+    text-decoration: underline;
+    /*border-bottom: 5px solid;*/
+    text-shadow: 5px -5px 4px rgb(19, 4, 4);
+
+}
+#logo{
+    width: 500px;
+}
+
+.navbar{
+    overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
