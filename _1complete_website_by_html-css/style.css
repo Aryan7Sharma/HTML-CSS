@@ -39,6 +39,7 @@ a{
 
 ul{
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .small-bold-text{
@@ -57,7 +58,6 @@ ul{
     background-size: 300px;
     /*background-repeat: no-repeat;*/
     height: 50px;
-    padding: ;
 }
 
 .banner-text{
@@ -71,6 +71,7 @@ ul{
 .flex{ /* for reusability*/
     display: flex;
     align-items: center;
+    
 }
 
 .company-logo img{
@@ -137,4 +138,67 @@ ul{
 }
 .hero-btn{
     margin-top: 20px;
+}
+
+/*companies header*/
+.companies-header{
+    text-align: center;
+    margin: 30px;
+    color: var(--primary-text-color);
+}
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 46px;
+}
+
+/*Features section*/
+.features-section{
+    padding: 80px var(--padding-inline-selection) 0;
+    background-image: url(https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5af9951ea9b84ec337b92251_Oval2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feature-header{
+    text-align: center;
+}
+
+.feature-header h2{
+    margin-bottom: 20px;
+}
+
+.features-area{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.features-card {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 30%;
+    text-align: center;
+}
+.features-card img{
+    width: 40px var;
+}
+
+/*Big-Features section*/
+.big-feature-section{
+    padding: 40px var(--padding-inline-selection) 0;
+}
+.big-feature-container{
+    gap: 40px;
+}
+
+.big-feature-img img{
+    width: 100%;
+}
+.big-feature-desc{
+    flex-direction: column;
+    align-items: flex-start;
 }
