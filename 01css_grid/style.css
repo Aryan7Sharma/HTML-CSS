@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,900;1,6..96,900&family=Happy+Monkey&family=Orbitron:wght@900&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.2rem;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #041308, #0b3317);
+    border: 10px solid black;
+}
+.left-text{
+    flex-basis: 30%;
+}
+.l-heading{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.l-subheading{
+    color: #ddd;
+    margin-top: 20px;
+    text-align: center;
+}
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: 120px;
+}
+.box{
+    color: white;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-blend-mode: hard-light;
+    cursor: pointer;
+    transition: all 2s ease-out;
+}
+.box:hover{
+    background-blend-mode: normal;
+    text-shadow: 0 0 4px #fff;
+    background-position: bottom;
+}
+
+
+/*utility class*/
+
+
+/*boxex backgroung images*/
+.box:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1455218873509-8097305ee378?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+    grid-row: span 2;
+    }
+.box:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    grid-column: span 2;
+}
+.box:nth-child(3){
+    background-image: url(https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+.box:nth-child(4){
+    background-image: url(https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+    grid-row: span 2;
+}
+.box:nth-child(5){
+    background-image: url(https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1275&q=80);
+    grid-column: span 2;
+}
+.box:nth-child(6){
+    background-image: url(https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+.box:nth-child(7){
+    background-image: url(https://images.unsplash.com/photo-1505028106030-e07ea1bd80c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1019&q=80);
+    grid-column: span 2;
+}
+
+/*box property
+.box{
+    height: 20px;
+    background-size: cover;
+}*/
