@@ -184,7 +184,7 @@ ul{
     text-align: center;
 }
 .features-card img{
-    width: 40px var;
+    width: 40px;
 }
 
 /*Big-Features section*/
@@ -258,6 +258,30 @@ ul{
 }
 
 /*footer section*/
-
+footer{
+background-color: #ebf2fa;
+padding-block: 80px;
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-container img{
+    width: 160px;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
 
 /*Sub footer section*/
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-selection);
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}
