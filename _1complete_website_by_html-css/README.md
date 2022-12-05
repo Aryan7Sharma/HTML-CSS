@@ -1,5 +1,5 @@
 
-# Final Wepsite link
+# Final Wepsite link and it;s a Clone of usabilityhub.com.
 
-linl -- https://clever-snickerdoodle-2ec0ef.netlify.app/
+link -- https://gorgeous-scone-0da60c.netlify.app/
 
