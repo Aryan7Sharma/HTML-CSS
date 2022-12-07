@@ -16,6 +16,7 @@
     --secondary3-color:#f4f4f4;
     --secondary4-color:#f8f8f8;
     --btn-back-color:#e50914;
+    --footer-text-color:#737373;
 
 }
 
@@ -94,6 +95,7 @@ header .h-buttons a{
 .background img{
     opacity: 0.6;
     width: 100%;
+    height: 80vh;
 }
 .background{
     position: relative;
@@ -177,4 +179,69 @@ section .download h4{
 }
 section .download span{
     color: #0071eb;
+}
+section .animation.animation.a3 img{
+    position: relative;
+    z-index: 5;
+}
+section .animation.animation.a3 video{
+    width: 300px;
+    position: absolute;
+    top: 40px;
+    left: 97px;
+}
+
+
+/*Site footer*/
+.site-footer{
+    max-width: 900px;
+    margin-inline: auto;
+    margin-block: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--footer-text-color);
+}
+.footer-top-text a{
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+.footer-top-text a:hover{
+    text-decoration: underline;
+}
+.footer-bottom-text{
+    font-size: small;
+}
+
+
+.footer-link{
+    color: var(--footer-text-color);
+    text-decoration: none;
+    font-size: small;
+}
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.site-footer ul{
+    display: grid;
+    list-style: none;
+    align-items: center;
+    grid: auto / auto auto auto auto;
+    gap: 12px;
+
+}
+.footer-btn svg{
+    width: 30px;
+    position:absolute;
+    z-index: 5;
+    margin-left: 20px;
+    margin-top: 11px;
+}
+.footer-btn select{
+    font-size: larger;
+    padding: 14px 10px 14px 60px;
+    color: var(--footer-text-color);
+    background: var(--primary1-color);
+    position: relative;
 }
