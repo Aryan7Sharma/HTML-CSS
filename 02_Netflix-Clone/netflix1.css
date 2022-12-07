@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-padding:20px;
+    --secondary-padding:12px;
+    --primary1-color:#000000;
+    --primary2-color: #303030;
+    --primary3-color:#333333;
+    --primary4-color:#555555;
+    --secondary1-color:#ffffff;
+    --secondary2-color: #f3f3f3;
+    --secondary3-color:#f4f4f4;
+    --secondary4-color:#f8f8f8;
+    --btn-back-color:#e50914;
+
+}
+
+body{
+    font-family: 'Open Sans','Roboto','Ubuntu', sans-serif;
+    background: var(--primary1-color);
+    color: var(--secondary2-color);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 100%;
+}
+h1{
+    font-size: 3.1rem;
+}
+h2{
+    font-size: 2.2rem;
+}
+h3{
+    font-size: 1.7rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+
+/*header*/
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 40px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+.logo img{
+    width: 200px;
+    height: 80px;
+}
+.logo a{
+    display: block;
+}
+header .h-buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+header .h-buttons a{
+    height: 35px;
+    background: var(--btn-back-color);
+    color: var(--secondary1-color);
+    border-radius: 3px;
+    padding: 7px 17px;
+    text-decoration: none;
+    font-size: medium;
+}
+.h-select select{
+    height: 35px;
+    background: transparent;
+    color: var(--secondary1-color);
+    padding: 6px 0 6px 20px;
+    border-radius: 3px;
+}
+.h-select svg{
+    height: 20px;
+    fill: var(--secondary1-color);
+    position: absolute;
+    margin-top: 7.5px;
+    margin-left: 2.2px;
+}
+
+/*splash and CTA*/
+.background img{
+    opacity: 0.6;
+    width: 100%;
+}
+.background{
+    position: relative;
+}
+.gradieant{
+    background-image: linear-gradient(to top, rgba(0,0,0,.8) 0, rgba(0,0,0,.0) 60%, rgba(0,0,0,0) 60%, rgba(0,0,0,.8) 100%);
+    position: absolute;
+    inset: 0;
+}
+
+/*texts and animation section*/
+.container{
+    border-top: 8px solid var(--primary3-color);
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px 35px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1180px;
+    margin-inline: auto;
+
+}
+section .texts{
+    width: 100%;
+    
+}
+section .texts h1{
+    margin-bottom: 8px;
+}
+section .texts p{
+    font-size: 1.625rem;
+}
+
+section .animation{
+    position: relative;
+}
+section .animation img{
+    width: 500px;
+}
+
+section .animation.a1 video{
+    width: 358px;
+    position: absolute;
+    top: 80px;
+    left: 68px;
+}
+section .animation.a3 video{
+    width: 290px;
+    position: absolute;
+    top: 62px;
+    left: 53px;
+}
+.container:nth-child(even) .texts{
+    order: 2;
+}
+
+section .download{
+    border: 2px solid var(--primary4-color);
+    border-radius: 15px;
+    height: 95px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    margin-left: -170px;
+    bottom: 40px;
+    background: var(--primary1-color);
+}
+section .download img{
+    width: auto;
+    height: 80px;
+}
+section .download h4{
+    font-size: 1rem;
+}
+section .download span{
+    color: #0071eb;
+}
