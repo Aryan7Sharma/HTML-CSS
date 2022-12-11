@@ -365,13 +365,38 @@ section .animation.animation.a3 video{
 /*Media Query's*/
 @media screen and (max-width:1200px) and (min-width: 200px){
     .splash-cta{
-        align-items: center;
         padding-block: 100px;
-        padding-inline: auto;
+    }
+    .splash-cta h1{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .splash-cta h3{
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    .splash-cta p{
+        font-size: 1rem;
+        margin-bottom: 15px;
     }
 }
 
 @media screen and (max-width:940px){
+    .splash-cta{
+        margin-block: 20px;
+    }
+    .splash-cta h1{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .splash-cta h3{
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .splash-cta p{
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
     .site-footer{
         justify-content: center;
         align-items: center;
@@ -385,8 +410,7 @@ section .animation.animation.a3 video{
         align-items: center;
         text-align: center;
     }
-}
-@media screen and (max-width:820px){
-    
-    
+    .container:nth-child(even) .texts{
+        order: 0;
+    }
 }
