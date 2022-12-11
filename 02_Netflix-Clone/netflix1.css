@@ -413,7 +413,7 @@ section .animation.animation.a3 video{
         order: 0;
     }
 }
-@media screen and (max-width:540px){
+@media screen and (max-width:600px){
     .splash-cta{
         margin-block:20px 0;
         max-height: 600px;
