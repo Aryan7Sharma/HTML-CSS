@@ -82,6 +82,7 @@ ul{
 .main-nav{
     justify-content: space-between;
     margin-top: 20px;
+    position: relative;
 }
 
 .nav-links{
@@ -190,7 +191,7 @@ ul{
     text-align: center;
 }
 .features-card img{
-    width: 40px;
+    width: 60px;
 }
 
 /*Big-Features section*/
@@ -296,6 +297,7 @@ padding-block: 80px;
 .subfooter-container{
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 

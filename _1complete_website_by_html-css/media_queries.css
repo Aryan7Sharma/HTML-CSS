@@ -1,11 +1,27 @@
 /*Media Query*/
 @media screen and (max-width:991px) {
-    h3{
-        font-size: 1.3rem;
+    .main-nav{
+        overflow: initial;
+    }
+    .nav-links{
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        padding-block: 20px;
+        transition: 0.1s ease-out;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .nav-links ul{
+        flex-direction: column;
     }
 
-    .nav-links ul{
-        display: none;
+
+    h3{
+        font-size: 1.2rem;
     }
     .nav-togle{
         display: block;
@@ -28,6 +44,10 @@
 
 
 @media screen and (max-width:767px) {
+    .top-banner{
+        height: 60px;
+    }
+
     .primary-btn{
         width: 100%;
     }
@@ -49,10 +69,55 @@
     .big-feature-container{
         flex-direction: column;
     }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .link-column{
+        align-items: center;
+    }
     
 }
 
 
 @media screen and (max-width:479px) {
+    :root{
+        --padding-inline-selection: 10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    
+
+    .examples-section{
+        padding-block: 80px 20px;
+    }
+    
+    .features-card{
+        min-width: 100%;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .examples-header{
+        text-align: center;
+    }
+    .example-card{
+        width: 100%;
+        height: 180px;
+    }
+    .examples-area{
+        gap: 10px;
+    }
+
     
 }
