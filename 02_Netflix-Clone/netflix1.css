@@ -54,6 +54,7 @@ header{
     position: absolute;
     z-index: 5;
     width: 100%;
+    overflow: hidden;
 }
 .logo img{
     width: 200px;
@@ -78,7 +79,7 @@ header .h-buttons a{
 }
 .h-select select{
     height: 35px;
-    background: transparent;
+    background: var(--primary1-color);
     color: var(--secondary1-color);
     padding: 6px 0 6px 20px;
     border-radius: 3px;
@@ -194,10 +195,11 @@ section .animation.a1 video{
     left: 68px;
 }
 section .animation.a3 video{
-    width: 290px;
+    width: 300px;
     position: absolute;
-    top: 62px;
-    left: 53px;
+    top: 40px;
+    left: 97px;
+    z-index: -1;
 }
 .container:nth-child(even) .texts{
     order: 2;
@@ -229,16 +231,7 @@ section .download h4{
 section .download span{
     color: #0071eb;
 }
-section .animation.animation.a3 img{
-    position: relative;
-    z-index: 5;
-}
-section .animation.animation.a3 video{
-    width: 300px;
-    position: absolute;
-    top: 40px;
-    left: 97px;
-}
+
 
 
 /*FAQ - Section*/
@@ -361,108 +354,3 @@ section .animation.animation.a3 video{
     position: relative;
 }
 
-/*Media Query's*/
-@media screen and (max-width:1200px) and (min-width: 200px){
-    .splash-cta{
-        padding-block: 100px;
-    }
-    .splash-cta h1{
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
-    .splash-cta h3{
-        font-size: 1.3rem;
-        margin-bottom: 30px;
-    }
-    .splash-cta p{
-        font-size: 1rem;
-        margin-bottom: 15px;
-    }
-}
-
-@media screen and (max-width:940px){
-    .splash-cta{
-        margin-block: 20px;
-    }
-    .splash-cta h1{
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-    }
-    .splash-cta h3{
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-    }
-    .splash-cta p{
-        font-size: 1rem;
-        margin-bottom: 15px;
-    }
-    .site-footer{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .container section{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .container:nth-child(even) .texts{
-        order: 0;
-    }
-}
-@media screen and (max-width:600px){
-    .splash-cta{
-        margin-block:20px 0;
-        max-height: 600px;
-    }
-    .splash-cta h1{
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-    }
-    .splash-cta h3{
-        font-size: 1rem;
-        margin-bottom: 30px;
-    }
-    .splash-cta p{
-        font-size: 0.8rem;
-        margin-bottom: 15px;
-    }
-    .splash-cta-form button{
-        width: 100px;
-        height: 35px;
-        margin-right: auto;
-        font-size: 1rem;
-        
-    }
-    .splash-cta-form input[type="email"]{
-        width: 300px;
-        height: 35px;
-        margin-left: auto;
-    }
-    .site-footer{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .container section{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .container:nth-child(even) .texts{
-        order: 0;
-    }
-    section .texts h1{
-        margin-bottom: 8px;
-        font-size: 2rem;
-    }
-    section .texts p{
-        font-size: 1.3rem;
-    }
-}
