@@ -104,19 +104,48 @@
         border-right: 1px solid var(--primary2-color);
     }
     .splash-cta-form button{
-        width: 100px;
+        width: 150px;
         height: 50px;
+        border-radius: 100px;
         margin-inline: auto;
         font-size: 1rem;
-        border-radius: 2px;
-        border-style: none;
-        background: var(--btn-back-color);
-        color: var(--secondary2-color);   
     }
 
+    .site-footer{
+        gap: 50px;
+    }
+    .site-footer ul{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        grid: auto / auto auto auto auto;
+        gap: 15px;
+    
+    }
+    .texts{
+        padding-inline: 10px;
+    }
 }
 
 
 @media screen and (max-width:479px){
-
+    .splash-cta h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .splash-cta h3{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .splash-cta p{
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    header .h-buttons a{
+        width: 80px;
+        padding: 7px 17px;
+        text-decoration: none;
+        font-size: small;
+    }
 }
