@@ -126,6 +126,10 @@
     .texts{
         padding-inline: 10px;
     }
+
+    .faq-form input[type="email"]{
+        max-width: 80%;
+        margin-inline: auto;
 }
 
 
@@ -147,5 +151,22 @@
         padding: 7px 17px;
         text-decoration: none;
         font-size: small;
+    }
+    .faq-form input[type="email"]{
+        max-width: 100%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    section .texts p{
+        font-size: 1rem;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
     }
 }
