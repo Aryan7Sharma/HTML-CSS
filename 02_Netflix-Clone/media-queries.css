@@ -87,8 +87,7 @@
     .logo img{
         width: 100px;
         height: 80px;
-        margin: 0;
-        padding: 0;
+        margin: -16px;
     }
     .splash-cta-form{
         flex-direction: column;
@@ -130,6 +129,7 @@
     .faq-form input[type="email"]{
         max-width: 80%;
         margin-inline: auto;
+    
 }
 
 
@@ -174,5 +174,8 @@
     }
     .question label{
         font-size: 1.2rem;
+    }
+    .logo img{
+        margin-top: -14px;
     }
 }
