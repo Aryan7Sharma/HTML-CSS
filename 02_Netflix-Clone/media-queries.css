@@ -129,7 +129,10 @@
     .faq-form input[type="email"]{
         max-width: 80%;
         margin-inline: auto;
-    
+    }
+    .question label{
+        font-size: 1.3rem;
+    }
 }
 
 
@@ -171,6 +174,9 @@
     }
     .answer{
         font-size: 16px;
+    }
+    .question label{
+        font-size: 1rem;
     }
     .logo img{
         margin-top: -14px;
