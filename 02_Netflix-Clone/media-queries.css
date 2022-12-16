@@ -169,4 +169,7 @@
         justify-content: center;
         margin-inline: auto;
     }
+    .answer{
+        font-size: 16px;
+    }
 }
