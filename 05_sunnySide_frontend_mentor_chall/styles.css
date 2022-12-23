@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1280px;
+    --dxl: 1536p;
+}
+h2{
+    font-size: 2.2rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+}
+
+img{
+    max-width: 100%;
+}
+.flex{
+    display: flex;
+}
+
+/*header*/
+.header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+
+}
+.header img{
+    padding-left: 30px;
+}
+.header .navbar{
+    padding-right: 30px;
+    display: flex;
+    gap: 20px;
+}
+.header .navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+/*main-feature-section*/
+
+.creative-sec{
+    position: absolute;
+    top: 25%;
+    width: 600px;
+    left: calc(50% - 300px);
+    color: white;
+    font-size: 2.5rem;
+}
+.background {
+    overflow: hidden;
+}
+.background img{
+    margin-bottom: -5px;
+}
+/*Features Section*/
+.feature{
+    gap: 0;
+    align-items: stretch;
+    height: 500px;
+}
+section .feature:nth-child(even){
+    flex-direction: row-reverse;
+}
+.feature .desc{
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.feature .fea-img{
+    flex: 1;
+}
+.feature .fea-img img{
+    height: 100%;  
+    max-width: 100%;
+}
+.feature .dCard:nth-child(1){
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-size: 100% 500px;
+}
+.feature .dCard:nth-child(2){
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-size: 100% 500px;
+}
+.feature .dCard h2{
+    font-size: 1.5rem;
+}
+.feature .dCard h4, p{
+    font-size: 1rem;
+}
+.feature .dCard{
+    height: 500px;
+}
+
+
+
+
+@media screen and (min-width:1280px) {
+    .container{
+        max-width: var(--xl);
+        margin-inline: auto;
+    }
+    /*header*/
+    .header{
+        width: var(--xl);
+    }
+}
